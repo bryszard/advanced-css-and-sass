@@ -1,0 +1,3 @@
+@function cell-width($size, $total) {
+    @return calc((#{$size} * (100% - ((#{$total} - 1) * #{$gutter-horizontal})) / #{$total}) + ((#{$size} - 1) * #{$gutter-horizontal}));
+}
